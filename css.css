@@ -1,0 +1,31 @@
+nav {
+    background-color: rgb(152, 197, 134);
+    height: 40px;
+}
+
+.navi {
+    color: black;
+}
+
+header,
+main {
+    text-align: center;
+}
+
+table, td {
+    border: 2px solid black;
+    margin: auto;
+}
+
+body {
+    background-image: linear-gradient(75deg, rgb(152, 197, 134), white);
+}
+
+thead {
+    background-color: rgb(152, 197, 134);
+}
+
+.code {
+    background-color: lightgray;
+    font-family: monospace;
+}

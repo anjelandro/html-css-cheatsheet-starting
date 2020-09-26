@@ -1,0 +1,35 @@
+nav {
+    background-color: rgb(240, 183, 200);
+    height: 40px;
+}
+
+.home {
+    color: black;
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(75deg, pink, white);
+}
+
+main {
+    text-align: center;
+}
+
+table, tbody, thead, td {
+    text-align: center;
+    border: 2px solid black;
+    margin: auto;
+}
+
+thead {
+    background-color: rgb(240, 183, 200);
+}
+
+.code {
+    background-color: lightgray;
+    font-family: monospace;
+}

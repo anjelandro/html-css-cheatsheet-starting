@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./forms.css" type="text/css">
+    <title>Cheat Sheet - Forms</title>
+</head>
+
+<body>
+    <nav class="navi">
+        <p id="teleport"><a class="home" href="./index.html">Main Menu</a></p>
+    </nav>
+
+    <header>
+        <h1>FORMS CHEAT SHEET</h1>
+    </header>
+
+    <main>
+        <h2>Forms Tags</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="code">&lt;form&gt;</td>
+                    <td>Form</td>
+                    <td>Element responsible for collecting information to send somehwere else.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;input&gt;</td>
+                    <td>Input</td>
+                    <td>Creates an input field for a <span class="code">&lt;form&gt;</span>.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;label&gt;</td>
+                    <td>Label</td>
+                    <td>Used to explain to the user what an <span class="code">&lt;input&gt;</span> is for.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;section&gt;</td>
+                    <td>Section</td>
+                    <td>Used to represent a standalone section for which a more specific element cant be found. Usually
+                        has a heading as a child element.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;select&gt;</td>
+                    <td>Select</td>
+                    <td>Used to create a dropdown list. Should have <span class="code">&lt;option&gt;</span> element as
+                        a child.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;option&gt;</td>
+                    <td>Option</td>
+                    <td>Used as a child element of <span class="code">&lt;select&gt;</span> to create dropdown lists.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;datalist&gt;</td>
+                    <td>Datalist</td>
+                    <td>Used with an <span class="code">&lt;input type="text"&gt;</span> element. The <span
+                            class="code">&lt;input&gt;</span> creates a text field that user can type into and filter
+                        options from the <span class="code">&lt;datalist&gt;</span>.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;textarea&gt;</td>
+                    <td>Text Area</td>
+                    <td>This element creates a bigger text field for user to write more text.</td>
+                </tr>
+        </table>
+        </tbody>
+        <h2>Forms Attributes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Name</th>
+                    <th>Values</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="code">type</td>
+                    <td>Type</td>
+                    <td>Text, Number, password, email, date, radio(multiple options, select one only), range (slider), color, checkbox(multiple options and choices), submit(creates a button) +</td>
+                    <td>This attribute determines how <span class="code">&lt;input&gt;</span> renders on the web page and what kind of data can accept.</td>                    
+                </tr>
+                <tr>
+                    <td class="code">name</td>
+                    <td>Name</td>
+                    <td>No default value</td>
+                    <td>This is a very important attribute because without it the information in the <span class="code">&lt;input&gt;</span> element wont be send when <span class="code">&lt;form&gt;</span> is submitted.</td>
+                </tr>
+                <tr>
+                    <td class="code">id</td>
+                    <td>ID</td>
+                    <td>Matching value with <span class="code">for</span> attribute for association purposes</td>
+                    <td>ID is used to associate elements like <span class="code">&lt;input&gt;</span> and <span class="code">&lt;datalist&gt;</span> to <span class="code">&lt;label&gt;</span> element by matching the values of said elements.</td>
+                </tr>
+                <tr>
+                    <td class="code">for</td>
+                    <td>For</td>
+                    <td>Matching value with <span class="code">id</span> and <span class="code">list</span> attributes</td>
+                    <td>This attributes goes inside the <span class="code">&lt;label&gt;</span> element and its used to associate <span class="code">&lt;input&gt;</span>, <span class="code">&lt;select&gt;</span>, and/or <span class="code">&lt;datalist&gt;</span> with it.</td>
+                </tr>
+                <tr>
+                    <td class="code">step</td>
+                    <td>Step</td>
+                    <td>Equal or greater than 1</td>
+                    <td>This attribute can be used along with <span class="code">type="number"</span> attribute to create arrows inside the input field to increase or decrease by the value of the <span class="code">step</span> attribute, it can also be used with <span class="code">type="range"</span> to create a slider and the <span class="code">step</span> attribute's value allows to control how smooth and fluid the slider works.</td>
+                </tr>
+                <tr>
+                    <td class="code">min <span id="break">and</span> max</td>
+                    <td>Minimum and Maximum</td>
+                    <td>Whatever value we want to set as minimum and/or maximum (i.e. 1 and 100)</td>
+                    <td>Assigns a minimum and/or maximum attribute with a desired value for numeric inputs in forms.</td>
+                </tr>
+                <tr>
+                    <td class="code">minlength <span id="break">and</span> maxlength</td>
+                    <td>Minimum length and Maximum lenght</td>
+                    <td>Whatever value we want to set as minimum and/or maximum (i.e. 3 and 200)</td>
+                    <td>Much like <span class="code">min</span> and <span class="code">max</span> attributes are used to set desired values for numeric inputs, <span class="code">minlength</span> and <span class="code">maxlength</span> attributes are used to set desired values for characters in text fields.</td>
+                </tr>
+                <tr>
+                    <td class="code">value</td>
+                    <td>Value</td>
+                    <td>Value for the input where the <span class="code">value</span> attribute is nested</td>
+                    <td>Specifies the value of the <span class="code">&lt;input&gt;</span> element.</td>
+                </tr>
+                <tr>
+                    <td class="code">list</td>
+                    <td>List</td>
+                    <td>Matching value with <span class="code">id</span> attribute from a <span class="code">&lt;datalist&gt;</span> element for association purposes</td>
+                    <td>Associates an <span class="code">&lt;input&gt;</span> element with a <span class="code">&lt;datalist&gt;</span> element.</td>
+                </tr>
+                <tr>
+                    <td class="code">required</td>
+                    <td>Required</td>
+                    <td>N/A</td>
+                    <td>We can use this attribute to make an input field mandatory in order to submit a form. </td>
+                </tr>
+                <tr>
+                    <td class="code">selected</td>
+                    <td>Selected</td>
+                    <td>N/A</td>
+                    <td>We can use this attribute inside of <span class="code">&lt;option&gt;</span> element to make that element the default shown in the web page.</td>
+                </tr>
+                <tr>
+                    <td class="code">pattern</td>
+                    <td>Pattern</td>
+                    <td>Regular expression or "regex"</td>
+                    <td>We can use this attrribute for cases when we want user input to follow specific guidelines. If the input matches the regex, the form can be submitted.</td>
+                </tr>
+        </table>
+    </main>
+    <footer>
+        <nav>
+            <p><a class="footer" href="#teleport">Back to top</a></p>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
